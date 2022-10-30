@@ -1,0 +1,25 @@
+{
+    "name": "dividend-group/uptime-laravel",
+    "description": "Checks server's uptime and downtime",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DividendGroup\\Uptime\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DividendGroup\\Uptime\\UptimeServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "symfony/process": "6.2.x-dev"
+    },
+    "require-dev": {
+        "orchestra/testbench": "8.0.x-dev"
+    },
+    "minimum-stability": "dev"
+}
